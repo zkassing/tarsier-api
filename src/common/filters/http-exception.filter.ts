@@ -13,8 +13,8 @@ export class HttpExceptionFilter implements ExceptionFilter {
     const status = exception.getStatus();
     const exceptionRes: any = exception.getResponse();
     const msgLog = {
-      code: status,
-      message: exceptionRes || '请求错误',
+      code: exceptionRes.code,
+      message: exceptionRes.message || '请求错误',
       timestamp: new Date().toISOString(),
     };
 
