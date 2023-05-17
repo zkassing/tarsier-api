@@ -2,7 +2,7 @@ import { Controller, Get, HttpException } from '@nestjs/common';
 import { MatchService } from './match.service';
 import { Match } from 'src/entities/match.entity';
 import { HttpError } from 'src/common/http.exception';
-import { NOT_FOUND } from 'src/common/error.config';
+import { NOT_FOUND } from 'src/common/config/error.config';
 
 @Controller('match')
 export class MatchController {
