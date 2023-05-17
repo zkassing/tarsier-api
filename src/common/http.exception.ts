@@ -1,5 +1,5 @@
 import { HttpException } from '@nestjs/common';
-import { IHttpError } from './config/error.config';
+import { IHttpError } from './config/response.status';
 
 export class HttpError extends HttpException {
   constructor(error: IHttpError) {

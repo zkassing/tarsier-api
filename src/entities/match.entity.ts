@@ -22,7 +22,4 @@ export class Match {
 
   @UpdateDateColumn()
   updatedAt: Date;
-
-  @Column()
-  playerId: string;
 }

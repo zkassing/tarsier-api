@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { PlayerModule } from './player/player.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { MatchModule } from './match/match.module';
+import { TestModule } from './test/test.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { MatchModule } from './match/match.module';
     }),
     PlayerModule,
     MatchModule,
+    TestModule,
   ],
   controllers: [AppController],
   providers: [AppService],
