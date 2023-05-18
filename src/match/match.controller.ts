@@ -8,7 +8,7 @@ import {
   Patch,
 } from '@nestjs/common';
 import { MatchService } from './match.service';
-import { Match } from 'src/entities/match.entity';
+import { Match } from 'src/match/entities/match.entity';
 import { CreateMatchDto } from './dto/create-match.dto';
 import { UpdateMatchDto } from './dto/update-match.dto';
 

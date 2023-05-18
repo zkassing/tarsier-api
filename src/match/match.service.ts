@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { HTTP_ERROR, HTTP_SUCCESS } from 'src/common/config/response.status';
 import { HttpError } from 'src/common/http.exception';
-import { Match } from 'src/entities/match.entity';
+import { Match } from 'src/match/entities/match.entity';
 import { Repository } from 'typeorm';
 import { CreateMatchDto } from './dto/create-match.dto';
 import { UpdateMatchDto } from './dto/update-match.dto';
